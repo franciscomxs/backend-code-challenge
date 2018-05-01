@@ -14,10 +14,3 @@ test:
   <<: *default
   host: localhost
   database: rakuten_test
-
-production:
-  <<: *default
-  database: <%= ENV['DATABASE_NAME'] %>
-  host: <%= ENV['DATABASE_HOST'] %>
-  username: <%= ENV['DATABASE_USER'] %>
-  password: <%= ENV['DATABASE_PASSWORD'] %>
