@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/franciscomxs/dijkstra.git
+  revision: bad6882e6ae749c2065a3b877bcabfb76025eeaf
+  ref: bad6882
+  specs:
+    dijkstra (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -175,6 +182,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   database_cleaner (~> 1.7)
+  dijkstra!
   factory_bot_rails (~> 4.8, >= 4.8.2)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
