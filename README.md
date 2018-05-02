@@ -6,7 +6,7 @@ Ruby/Elixir Engineer Coding Challenge
 
 =======================
 
-Para lidar com a lógica da funcionalidade solicitada, optei por fazer uma implementação própria do algoritmo de [Djkstra](https://github.com/franciscomxs/dijkstra) em uma biblioteca separada.
+Para lidar com a lógica da funcionalidade solicitada, optei por fazer uma implementação própria do algoritmo de [Djkstra](https://github.com/franciscomxs/dijkstra) em uma [biblioteca separada em meu Github](https://github.com/franciscomxs/dijkstra).
 
 Tanto a gem que lida com a lógica, quando a aplicação que a utiliza, tem badges indicando test coverage e qualidade de código, avaliado pelo CodeClimate, disponível no topo do arquivo README.md.
 
