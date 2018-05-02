@@ -1,7 +1,7 @@
 Ruby/Elixir Engineer Coding Challenge
 
-[![Build Status](https://travis-ci.org/franciscomxs/rakuten.svg?branch=master)](https://travis-ci.org/franciscomxs/rakuten)
-[![Coverage Status](https://coveralls.io/repos/github/franciscomxs/rakuten/badge.svg?branch=master)](https://coveralls.io/github/franciscomxs/rakuten?branch=master)
+[![Build Status](https://travis-ci.org/franciscomxs/backend-code-challenge.svg?branch=master)](https://travis-ci.org/franciscomxs/backend-code-challenge)
+[![Coverage Status](https://coveralls.io/repos/github/franciscomxs/backend-code-challenge/badge.svg?branch=master)](https://coveralls.io/github/franciscomxs/backend-code-challenge?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/de9d1317ac41bce2f110/maintainability)](https://codeclimate.com/github/franciscomxs/backend-code-challenge/maintainability)
 
 =======================
