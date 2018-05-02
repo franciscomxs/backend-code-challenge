@@ -1,5 +1,84 @@
 Ruby/Elixir Engineer Coding Challenge
+
+[![Build Status](https://travis-ci.org/franciscomxs/rakuten.svg?branch=master)](https://travis-ci.org/franciscomxs/rakuten)
+[![Coverage Status](https://coveralls.io/repos/github/franciscomxs/rakuten/badge.svg?branch=master)](https://coveralls.io/github/franciscomxs/rakuten?branch=master)
+[![Code Climate](https://codeclimate.com/github/franciscomxs/rakuten/badges/gpa.svg)](https://codeclimate.com/github/franciscomxs/rakuten)
+
 =======================
+
+Para lidar com a lógica da funcionalidade solicitada, optei por fazer uma implementação própria do algoritmo de [Djkstra](https://github.com/franciscomxs/dijkstra) em uma biblioteca separada.
+
+Tanto a gem que lida com a lógica, quando a aplicação que a utiliza, tem badges indicando test coverage e qualidade de código, avaliado pelo CodeClimate, disponível no topo do arquivo README.md.
+
+Esta aplicação (rails api) atende às requisições conforme proposto no desafio. Segue exemplo:
+
+# Requests
+
+#### POST /v1/distance
+
+Body:
+```javascript
+{ "distance": { "origin": "Araguaína", "destination": "Palmas", "distance": "386" } }
+
+```
+
+Possíveis respostas:
+
+- Status: 201 - Created
+
+  Distancia adicionada ou editada com sucesso.
+
+  Body:
+
+```javascript
+{ "origin": "Araguaína", "destination": "Palmas", "distance": "386" }
+
+```
+
+- Status: 422 - Unprocessable entity
+
+```javascript
+{ "errors": ["Erros", "de", "validação"] }
+
+```
+
+- Status: 400 - Bad request
+
+#### GET /v1/cost?origin=x&destination=y&weight=z
+
+Possíveis respostas:
+
+- Status: 200 - Custo calculado com sucesso
+
+Body:
+
+```javascript
+{ "cost": "10", "shortest_route": "A - B - C- D" }
+
+```
+
+- Status: 422 - Unprocessable entity
+
+Acontecerá caso o banco de dados não tenha dados suficientes para calcular uma rota.
+
+Body:
+
+```javascript
+{ "errors": ["Invalid route"] }
+
+```
+
+## Live (Heroku)
+
+
+
+A aplicação para testes foi deployada no Heroku.
+
+- POST http://rakuten-br.herokuapp.com/v1/distance
+- GET http://rakuten-br.herokuapp.com/v1/cost?origin=Araguaína&destination=Palmas&weight=50
+
+=======================
+
 
 Hello!
 
