@@ -3,7 +3,7 @@ class V1::DistancesController < ApplicationController
     distance = Distance.find_or_initialize_by(distance_key_params)
     distance.assign_attributes(distance_params)
     if distance.save
-      render json: distance.to_json, status: 201
+      render json: distance, status: 201
     else
       render json: { errors: distance.errors.full_messages }, status: 422
     end

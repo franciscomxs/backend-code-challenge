@@ -8,6 +8,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'dijkstra', github: 'franciscomxs/dijkstra', ref: 'bad6882'
+gem 'active_model_serializers', '~> 0.10.7'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # No needed for a challenge
