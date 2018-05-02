@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter do |source_file|
